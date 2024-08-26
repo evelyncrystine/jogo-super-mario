@@ -11,7 +11,7 @@
     margin: 0  auto;
     position: relative;
     overflow: hidden;
-    background: linear-grandline(87CEEB,#E0F6FF);
+    background: linear-grandline(#87CEEB,#E0F6FF);
 }
 
 .pipe {
@@ -41,6 +41,38 @@
     from {
         right: -80px;
     }
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0;
+    }
+
+    40% {
+        bottom: 180px;
+    }
+
+    50% {
+        bottom: 180px;
+    }
+
+    60% {
+        bottom: 180px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
+@keyframes clouds-animation {
+    from {
+        right: -550px;
+    }
+
     to {
         right: 100%;
     }
