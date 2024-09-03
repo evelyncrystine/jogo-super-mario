@@ -74,6 +74,13 @@ button.start {
     left: 0;
 }
 
+.game-over h1 {
+    font-size: 3rem;
+    color: red;
+    text-align: center;
+    margin-top: 15rem;
+}
+
 @keyframes pipe-animation {
     from {
         right: -80px;
