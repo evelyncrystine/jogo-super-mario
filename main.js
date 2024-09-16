@@ -11,7 +11,8 @@ let gameStarted = false;
 
 const startGame = () => {
   gameStarted = true;
-
+  audioStart.play();
+  
   pipe.style.animation = "pipe-animation 1.5s infinite linear";
   
   startButton.style.display = "none";
@@ -49,7 +50,7 @@ const marioPosition = +window.getComputedStyle(mario).bottom.replace("px", "");
     mario.style.marginLeft = "50px";
 
     clearInterval(loop);
-
+  }
 }, 10);
 
 document.addEventListener("keydown", jump);
