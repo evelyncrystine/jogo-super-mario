@@ -31,7 +31,6 @@ const jump = () => {
   } 
  ,500);
 }
-
 }
 
 const loop = setInterval(() => {
@@ -48,8 +47,12 @@ const marioPosition = +window.getComputedStyle(mario).bottom.replace("px", "");
     mario.src = "./img/game-over.png";
     mario.style.width = "75px";
     mario.style.marginLeft = "50px";
+    audioStart.pause();
+
+    gameOverSound.play();
 
     clearInterval(loop);
+    gameOverScreen.style.display = "flex";
   }
 }, 10);
 
